@@ -1,0 +1,22 @@
+services:
+
+  app:
+    image: imageprocessingapi-app:${IMAGE_TAG:-latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: imageprocessingapi-app-${IMAGE_TAG:-latest}
+
+    working_dir: /workspace
+
+    ports:
+      - "3000:3000"
+
+    volumes:
+      - .:/workspace
+
+    stdin_open: true
+    tty: true
+
+    command: /bin/bash
