@@ -1,0 +1,37 @@
+{
+  "name": "projectsubmit",
+  "version": "1.0.0",
+  "description": "Udacity Image Processing API submission",
+  "main": "build/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node build/src/server.js",
+    "test": "npm run build && jasmine",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --check \"src/**/*.ts\" \"tests/**/*.ts\" \"*.json\" \"*.md\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jasmine": "^4.3.6",
+    "@types/node": "^12.20.55",
+    "@types/sharp": "^0.30.5",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^8.10.2",
+    "jasmine": "^4.6.0",
+    "prettier": "^2.8.8",
+    "superagent": "6.1.0",
+    "supertest": "6.1.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
+  }
+}
